@@ -29,7 +29,7 @@
     "DBDish::SQLite::Native": "lib/DBDish/SQLite/Native.rakumod",
     "DBDish::SQLite::StatementHandle": "lib/DBDish/SQLite/StatementHandle.rakumod",
     "DBDish::SQLCipher": "lib/DBDish/SQLCipher.rakumod",
-    "DBDish::SQLCipher::Connection": "lib/DBDish/SQCipher/Connection.rakumod",
+    "DBDish::SQLCipher::Connection": "lib/DBDish/SQLCipher/Connection.rakumod",
     "DBDish::SQLCipher::Native": "lib/DBDish/SQLCipher/Native.rakumod",
     "DBDish::SQLCipher::StatementHandle": "lib/DBDish/SQLCipher/StatementHandle.rakumod",
     "DBDish::StatementHandle": "lib/DBDish/StatementHandle.rakumod",
