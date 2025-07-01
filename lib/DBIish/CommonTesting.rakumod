@@ -213,7 +213,7 @@ method run-tests {
         [ 'TAFM', 'Mild fish taco', 1, 4.85, 4.85 ]
     );
 
-    if $.dbd eq 'SQLite' | 'SQLCipher' { # Munge types
+    if $.dbd ~~ any <SQLite SQLCipher> { # Munge types
         $sth.column-types[$_] = [Str, Str, Int, Rat, Rat][$_] for ^5;
     }
 
@@ -240,7 +240,7 @@ method run-tests {
     is @columns.elems, 5, "column-type returns 5 fields in a row";
     ok @columns eqv [ Str, Str, Int, Rat, Rat ], 'column-types matches test data';
 
-    if $.dbd eq 'SQLite' | 'SQLCipher' { # Munge types
+    if $.dbd ~~ any <SQLite SQLCipher> { # Munge types
         $sth.column-types[$_] = [Str, Str, Int, Rat, Rat][$_] for ^5;
     }
 
