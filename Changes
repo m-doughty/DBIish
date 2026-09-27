@@ -1,6 +1,7 @@
 Revision history for DBIish
 
 {{$NEXT}}
+    - Update NativeHelpers::Blob for RakuAST compatibility
 
 0.6.8  2026-04-13T00:08:46+02:00
     - Fix test that was blocking Rakudo Star release
